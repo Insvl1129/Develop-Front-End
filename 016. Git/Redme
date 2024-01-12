@@ -1,4 +1,12 @@
-时间:  2024-1-8 18:10:13
+# 时间:  2024-1-8 18:10:13
+
+# 设置用户名
+git config --global user.name "insvl"
+git config --global user.email li.zhengbo.1129@gmail.com 
+
+# 查看用户名和密码
+git config user.name
+git config user.email
 
 # Github上创建项目, 在新建文件夹
 
