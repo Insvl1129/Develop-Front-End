@@ -8,9 +8,8 @@ git config user.email
 
 
 # 设置代理
-git config --global ftp.proxy sock5://127.0.0.1:10086
-git config --global http.proxy sock5://127.0.0.1:10086
-git config --global https.proxy sock5://127.0.0.1:10086
+git config --global http.proxy "socks:127.0.0.1:10086"
+git config --global https.proxy "socks:127.0.0.1:10086"
 # 取消代理
 git config --global --unset http.proxy
 git config --global --unset https.proxy
