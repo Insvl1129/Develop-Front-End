@@ -1,15 +1,26 @@
-# 时间:  2024-1-8 18:10:13
-
 # 设置用户名
 git config --global user.name "insvl"
 git config --global user.email li.zhengbo.1129@gmail.com 
-
 # 查看用户名和密码
 git config user.name
 git config user.email
 
-# Github上创建项目, 在新建文件夹
 
-# vscode克隆, 再把.Git文件夹和其他文件夹放到项目目录下.
 
-# 重新打开测试同步是否正常
+# 设置代理
+git config --global ftp.proxy sock5://127.0.0.1:10086
+git config --global http.proxy sock5://127.0.0.1:10086
+git config --global https.proxy sock5://127.0.0.1:10086
+# 取消代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+# 查看代理
+git config --global --get http.proxy
+git config --global --get https.proxy
+
+
+1. Github上创建项目, 在新建文件夹
+
+2. vscode克隆, 再把.Git文件夹和其他文件夹放到项目目录下.
+
+3. 重新打开测试同步是否正常
