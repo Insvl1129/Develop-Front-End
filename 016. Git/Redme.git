@@ -23,3 +23,4 @@ git config --global --get https.proxy
 2. vscode克隆, 再把.Git文件夹和其他文件夹放到项目目录下.
 
 3. 重新打开测试同步是否正常
+
