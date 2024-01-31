@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- 2024年1月28日 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单常用控件</title>
+</head>
+
+<body>
+    <form action="https://blog.yoitsu.moe/search" target="_blank">
+        <!-- 主要信息 -->
+        <fieldset>
+            <legend>主要信息</legend>
+            <label for="zhanghu">账户: </label>
+            <input id="zhanghu" type="text" name="account" maxlength="10"><br>
+            <label>
+                密码:
+                <input id="mima" type="password" name="pwd" maxlength="6"><br>
+            </label>
+            性别:
+            <input id="nan" type="radio" name="gender" value="male">
+            <label for="nan">男</label>
+            <label>
+                <input type="radio" name="gender" value="female" checked>女<br>
+            </label>
+        </fieldset>
+        <!-- 附加信息 -->
+        <fieldset>
+            <legend>附加信息</legend>
+            爱好:
+            <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+            <input type="checkbox" name="hobby" value="drink" checked>喝酒
+            <input type="checkbox" name="hobby" value="perm">烫头
+            <br>
+            其他:
+            <textarea name="other" cols="23" rows="3"></textarea><br>
+            籍贯:
+            <select name="place">
+                <option value="HB">河北</option>
+                <option value="GX" selected>广西</option>
+                <option value="GD">广东</option>
+            </select><br>
+        </fieldset>
+        <input type="hidden" name="from" value="123">
+        <br>
+        <button type="submit">确认</button>
+        <input type="reset">
+        <button type="button">检测账户是否被注册</button>
+    </form>
+</body>
+
+</html>
