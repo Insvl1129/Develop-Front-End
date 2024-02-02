@@ -11,11 +11,21 @@
     <!-- 利用ifram嵌入一个普通网页 -->
     <!-- <iframe src="https://www.163.com/" width="900" height="300" frameborder="0"> </iframe> -->
     <!-- 利用ifram嵌入一个广告网页 -->
-    <br>
-    <iframe
-        src="https://pos.baidu.com/vcem?conwid=300&conhei=100&rdid=6928700&dc=3&di=u6928700&s1=978691785&s2=2061702308&dri=1&dis=0&dai=110&ps=738.5x1088&enu=encoding&exps=110277,110275,110261,110252,110011&ant=0&psi=adc6eca97c4b0e0c&dcb=___adblockplus_&dtm=HTML_POST&dvi=0.0&dci=-1&dpt=none&tpr=1706633713251&ti=%E7%BD%91%E6%98%93&ari=2&ver=0830&dbv=2&drs=4&pcs=1577x692&pss=1577x10525&cfv=0&cpl=5&chi=2&cce=true&cec=UTF-8&tlm=1706633717&prot=2&rw=692&ltu=https%3A%2F%2Fwww.163.com%2F&ecd=1&dft=0&uc=1600x860&pis=-1x-1&sr=1600x900&tcn=1706633717&qn=69425c3993d53979&ft=1">
 
-    </iframe>
+    <!-- <br> -->
+
+    <!-- <iframe
+        src="https://pos.baidu.com/vcem?conwid=300&conhei=100&rdid=6928700&dc=3&di=u6928700&s1=978691785&s2=2061702308&dri=1&dis=0&dai=110&ps=738.5x1088&enu=encoding&exps=110277,110275,110261,110252,110011&ant=0&psi=adc6eca97c4b0e0c&dcb=___adblockplus_&dtm=HTML_POST&dvi=0.0&dci=-1&dpt=none&tpr=1706633713251&ti=%E7%BD%91%E6%98%93&ari=2&ver=0830&dbv=2&drs=4&pcs=1577x692&pss=1577x10525&cfv=0&cpl=5&chi=2&cce=true&cec=UTF-8&tlm=1706633717&prot=2&rw=692&ltu=https%3A%2F%2Fwww.163.com%2F&ecd=1&dft=0&uc=1600x860&pis=-1x-1&sr=1600x900&tcn=1706633717&qn=69425c3993d53979&ft=1">
+    </iframe> -->
+
+    <!-- 与表单的target属性配合使用 -->
+    <form action="https://so.toutiao.com/search" target="container">
+        <input type="text" name="keyword">
+        <input type="submit" value="搜索">
+    </form>
+
+    <iframe src="container" frameborder="0" width="900" height="300"></iframe>
+
 </body>
 
 </html>
