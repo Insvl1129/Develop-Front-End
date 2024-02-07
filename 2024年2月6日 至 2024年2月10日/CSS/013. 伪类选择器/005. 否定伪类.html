@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选中是div的儿子p元素, 但是排除类名为fail的元素 */
+        /* div>*:not(.fail) {
+            color: red;
+        } */
+
+        /* 选中是div的儿子p元素, 但是排除title属性以"加油"开头的元素 */
+        div>p:not([title^="加油"]) {
+            color: red;
+        }
+
+        /* 选中是div的儿子元素, 但是排除第一个元素 */
+        /* div>p:not(:first-child) {
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 结构1 -->
+    <div>
+        <p>张三: 98分</p>
+        <p>李四: 88分</p>
+        <p class="fail" title="加油, 相信复利">王五: 78分</p>
+        <p class="fail" title="加油, 相信复利">赵六: 68分</p>
+        <span>测试</span>
+    </div>
+</body>
+
+</html>

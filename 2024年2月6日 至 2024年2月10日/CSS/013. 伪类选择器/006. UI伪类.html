@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选中的是勾选的复选框 或 单选按钮 */
+        input:checked {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        /* 选中的是被禁用的input元素 */
+        input:disabled {
+            background-color: gray;
+        }
+
+        /* 选中的是可用的input元素 */
+        input:enabled {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox"></input>
+    <input type="radio" name="gender">男
+    <input type="radio" name="gender">女
+    <input type="text">
+    <input type="text" disabled>
+</body>
+
+</html>
